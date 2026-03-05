@@ -69,3 +69,18 @@ plot(b2, col=inferno(100))
 plot(b3, col=inferno(100))
 plot(b4, col=inferno(100))
 plot(b8, col=inferno(100))
+
+#stack
+sentinel=c(b2,b3,b4,b8)
+plot(sentinel)
+plot(sentinel, col =inferno(100)) #per cambiare colore
+dev.off() #togllie tutte le grafiche, chiude la finestra
+    
+#fare subsets
+names(sentinel)
+plot(sentinel$sentinel.dolomites.b8)
+plot(sentinel[[1]])
+#mi fa vedere solo il layer 1, quindi b2
+#non gli piace il dollaro, usiamo [[layer]]
+
+
